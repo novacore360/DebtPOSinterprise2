@@ -1,0 +1,97 @@
+/*
+ * Theme variables.
+ * "dark" is the app's original look and stays the default — nothing about it
+ * has changed. "light" is the new mode, added as the opposite of every
+ * background/foreground pairing so text and icons stay visible either way.
+ */
+
+:root,
+[data-theme='dark'] {
+  --page-bg: #0f0f1a;
+  --page-bg-alt: #0a0a1a;
+  --login-bg-1: #0a0a1a;
+  --login-bg-2: #1a1a2e;
+  --login-bg-3: #16213e;
+
+  --nav-bg: #1a1a2e;
+  --nav-bg-t: rgba(26, 26, 46, 0.97);
+  --surface-2: #1e2035;
+
+  --text-primary: #ffffff;
+  --text-muted-fallback: #858796;
+
+  --brand-text-1: #ffffff;
+  --brand-text-2: #a5b4fc;
+
+  /* white-alpha scale (dark mode = literally the original rgba(255,255,255,X) values) */
+  --wa-02: rgba(255, 255, 255, 0.02);
+  --wa-03: rgba(255, 255, 255, 0.03);
+  --wa-04: rgba(255, 255, 255, 0.04);
+  --wa-05: rgba(255, 255, 255, 0.05);
+  --wa-06: rgba(255, 255, 255, 0.06);
+  --wa-07: rgba(255, 255, 255, 0.07);
+  --wa-08: rgba(255, 255, 255, 0.08);
+  --wa-1: rgba(255, 255, 255, 0.1);
+  --wa-12: rgba(255, 255, 255, 0.12);
+  --wa-15: rgba(255, 255, 255, 0.15);
+  --wa-2: rgba(255, 255, 255, 0.2);
+  --wa-25: rgba(255, 255, 255, 0.25);
+  --wa-3: rgba(255, 255, 255, 0.3);
+  --wa-35: rgba(255, 255, 255, 0.35);
+  --wa-4: rgba(255, 255, 255, 0.4);
+  --wa-45: rgba(255, 255, 255, 0.45);
+  --wa-5: rgba(255, 255, 255, 0.5);
+  --wa-55: rgba(255, 255, 255, 0.55);
+  --wa-6: rgba(255, 255, 255, 0.6);
+  --wa-7: rgba(255, 255, 255, 0.7);
+  --wa-95: rgba(255, 255, 255, 0.95);
+
+  color-scheme: dark;
+}
+
+[data-theme='light'] {
+  --page-bg: #f4f5fa;
+  --page-bg-alt: #eef0f7;
+  --login-bg-1: #eef1fb;
+  --login-bg-2: #e4e8f7;
+  --login-bg-3: #dbe2f5;
+
+  --nav-bg: #ffffff;
+  --nav-bg-t: rgba(255, 255, 255, 0.97);
+  --surface-2: #ffffff;
+
+  --text-primary: #14142b;
+  --text-muted-fallback: #6b6b80;
+
+  --brand-text-1: #14142b;
+  --brand-text-2: #4e73df;
+
+  /* opposite of dark mode: the same alpha value, but black instead of white */
+  --wa-02: rgba(20, 20, 43, 0.05);
+  --wa-03: rgba(20, 20, 43, 0.06);
+  --wa-04: rgba(20, 20, 43, 0.07);
+  --wa-05: rgba(20, 20, 43, 0.08);
+  --wa-06: rgba(20, 20, 43, 0.09);
+  --wa-07: rgba(20, 20, 43, 0.1);
+  --wa-08: rgba(20, 20, 43, 0.11);
+  --wa-1: rgba(20, 20, 43, 0.13);
+  --wa-12: rgba(20, 20, 43, 0.15);
+  --wa-15: rgba(20, 20, 43, 0.18);
+  --wa-2: rgba(20, 20, 43, 0.25);
+  --wa-25: rgba(20, 20, 43, 0.32);
+  --wa-3: rgba(20, 20, 43, 0.4);
+  --wa-35: rgba(20, 20, 43, 0.45);
+  --wa-4: rgba(20, 20, 43, 0.5);
+  --wa-45: rgba(20, 20, 43, 0.55);
+  --wa-5: rgba(20, 20, 43, 0.6);
+  --wa-55: rgba(20, 20, 43, 0.65);
+  --wa-6: rgba(20, 20, 43, 0.7);
+  --wa-7: rgba(20, 20, 43, 0.8);
+  --wa-95: rgba(20, 20, 43, 0.95);
+
+  color-scheme: light;
+}
+
+[data-theme='light'] body {
+  background: var(--page-bg);
+}
